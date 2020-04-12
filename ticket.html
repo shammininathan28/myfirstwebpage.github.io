@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>AED23D HTML Project</title>
+<meta name="keywords" content="Singapore, Attractions, Zoo, Animals, Tourist, Tourism" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AED23D Html Project" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="accordion.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container" >
+		<div id="logo" style="background-image=images/banner2.jpg">
+        	<img src="images/gardenlogo.png" width="200" height="100" alt="" />
+			<h1><a href="index.html">Singapore Zoo</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Homepage</a></li>
+				<li><a href="about.html" accesskey="2" title="">About</a></li>
+				<li><a href="gallery.html" accesskey="3" title="">Gallery</a></li>
+				<li><a href="dining.html" accesskey="4" title="">Dining</a></li>
+				<li><a href="location.html" accesskey="5" title="">Location</a></li>
+				<li class="active"><a href="ticket.html" accesskey="6" title="">Ticket</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+
+	<div id="welcome" class="container">
+	
+<br>
+ 
+<div class="title">
+	  <h2>Ticket Prices</h2>
+		</div>
+
+<button class="accordion">For Singapore Residents</button>
+<div class="panel">
+<center>
+<table id="t01"
+ <table style="width:60%; padding=100px;">
+  </tr>
+  <tr>
+    <td>Adult</td>
+    <td>From $31.20</td>
+  </tr>
+  <tr>
+    <td>Child <br>(Aged 3 to 12)</td>
+    <td>From $20.80</td>
+  </tr>
+  <tr>
+    <td>Senior Citizen<br>Ages 60 and above<br>ID Verification required upon entry.</td>
+    <td>From $18.00</td>
+  </tr>
+</table>
+</center>
+</div>
+
+<button class="accordion">Non-Residents</button>
+<div class="panel">
+<center>
+<table id="t01"
+ <table style="width:60%; padding=100px;">
+  </tr>
+  <tr>
+    <td>Adult</td>
+    <td> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; From $35.10</td>
+  </tr>
+  <tr>
+    <td>Child <br>(Aged 3 to 12)</td>
+    <td> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; From $23.40</td>
+  </tr>
+</table>
+</center>
+</div>
+
+<button class="accordion">Charges for other services</button>
+<div class="panel">
+<center>
+<center>
+<h2 style="padding:20px">Tram Ride </h2>
+<img src="images/tram.jpg" width="400px"/>
+</center>
+<center>
+<table id="t03"
+ <table style="width:60%;">
+  </tr>
+  <tr>
+  <td>Tram Ticket Prices</td>
+  <td>
+  <ul>
+<li>Adult &emsp; &emsp; &emsp;  $5 </li>
+<li>Child &emsp; &emsp; &emsp; $23</li>
+</ul>
+ </td>
+ <tr>
+	<td>Last tram timings</td>
+	<td>
+<ul>
+<li>Tram Station 1 at 5.30pm</li>
+<li>Tram Station 2 at 6.05pm</li>
+<li>Tram Station 3 at 6.10pm</li>
+<li>Tram Station 4 at 6.15pm </li> 
+</ul>
+</td>
+  </tr>
+</table>
+</center>
+  </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</div>
+</div>
+
+</div>
+				
+<div id="footer">
+	<div class="container">
+		<div class="fbox1">
+		<span class="icon icon-map-marker"></span>
+			<span>80 Mandai Lake Road 
+			<br />Singapore 729826</span>
+		</div>
+		<div class="fbox1">
+			<span class="icon icon-phone"></span>
+			<span>
+				Telephone: +65 6269 3411
+			</span>
+		</div>
+		<div class="fbox1">
+			<span class="icon icon-envelope"></span>
+			<span><a href="https://www.wrs.com.sg/en/singapore-zoo/contact-us.html"target="_blank">Click Here to Email</a></span>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

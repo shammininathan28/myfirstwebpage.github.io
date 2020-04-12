@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>AED23D HTML Project</title>
+<meta name="keywords" content="Singapore, Attractions, Zoo, Animals, Tourist, Tourism" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AED23D Html Project" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container" >
+		<div id="logo" style="background-image=images/banner2.jpg">
+        	<img src="images/gardenlogo.png" width="200" height="100" alt="" />
+			<h1><a href="index.html">Singapore Zoo</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="index.html" accesskey="1" title="">Homepage</a></li>
+				<li><a href="about.html" accesskey="2" title="">About</a></li>
+				<li><a href="gallery.html" accesskey="3" title="">Gallery</a></li>
+				<li><a href="dining.html" accesskey="4" title="">Dining</a></li>
+				<li><a href="location.html" accesskey="5" title="">Location</a></li>
+				<li><a href="ticket.html" accesskey="6" title="">Ticket</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+
+	<div id="welcome" class="container">
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/banner2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/banner3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/banner4.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+    	<br>
+<div class="title">
+	  <h2>AED23D HTML PROJECT</h2>
+	  <p> A website designed for my AED23D Course </p>
+		</div>
+</div>
+	
+	<div id="portfolio" class="container">
+	<center><h1 style="padding-bottom:60px; color:green;">Links to Singapore Zoo Official Website</h1></center>
+	
+		<div class="column1">	
+			<div class="box">
+			  <h3>About Singapore Zoo</h3>
+				<p>Set in a rainforest environment, Singapore Zoo's world-famous "Open Concept” 
+				offers the opportunity to experience and be inspired by the wonders of nature. </p>
+		  <a href="https://www.wrs.com.sg/en/about-us/about-singapore-zoo.html" class="button button-small"target="blank">Click Here to Know More</a> </div>
+		</div>
+		<div class="column2">
+			<div class="box">
+			  <h3>Animals & Zones</h3>
+				<p>What animal would you like to see? <br> From Australasia to Wild Africa, our zones replicate diverse animal habitats around the world. 
+				Explore with us! Now! </p>
+		  <a href="https://www.wrs.com.sg/en/singapore-zoo/animals-and-zones.html" class="button button-small" target="blank" >Click Here to Know More</a> </div>
+		</div>
+		<div class="column3">
+			<div class="box">
+			  <h3>Things To Do</h3>
+				<p>Activities & Highlights <br> Ready for some outdoor fun? Explore our unique and wide-ranging experiences that are sure to thrill both the young and old.</p>
+		  <a href="https://www.wrs.com.sg/en/singapore-zoo/things-to-do.html" class="button button-small" target="blank">Click Here to Know More</a> </div>
+		</div>
+		<div class="column4">
+			<div class="box">
+			  <h3>Events</h3>
+				<p>Participate in the variety of events held at the Singapore Zoo. Join and experience the fun which thrills everyone! Exciting events planned throughout the year!</p>
+		  <a href="https://www.wrs.com.sg/en/singapore-zoo/whats-on.html" class="button button-small"target="blank">Click Here to Know More</a> </div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="container">
+		<div class="fbox1">
+		<span class="icon icon-map-marker"></span>
+			<span>80 Mandai Lake Road 
+			<br />Singapore 729826</span>
+		</div>
+		<div class="fbox1">
+			<span class="icon icon-phone"></span>
+			<span>
+				Telephone: +65 6269 3411
+			</span>
+		</div>
+		<div class="fbox1">
+			<span class="icon icon-envelope"></span>
+			<span><a href="https://www.wrs.com.sg/en/singapore-zoo/contact-us.html"target="_blank">Click Here to Email</a></span>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

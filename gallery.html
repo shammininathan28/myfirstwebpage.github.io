@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>AED23D HTML Project</title>
+<meta name="keywords" content="Singapore, Attractions, Zoo, Animals, Tourist, Tourism" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AED23D Html Project" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="gallery.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container" >
+		<div id="logo" style="background-image=images/banner2.jpg">
+        	<img src="images/gardenlogo.png" width="200" height="100" alt="" />
+			<h1><a href="index.html">Singapore Zoo</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Homepage</a></li>
+				<li><a href="about.html" accesskey="2" title="">About</a></li>
+				<li class="active"><a href="gallery.html" accesskey="3" title="">Gallery</a></li>
+				<li><a href="dining.html" accesskey="4" title="">Dining</a></li>
+				<li><a href="location.html" accesskey="5" title="">Location</a></li>
+				<li><a href="ticket.html" accesskey="6" title="">Ticket</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+
+	<div id="welcome" class="container">
+	
+<br>
+    	
+<div class="title">
+	  <h2>Gallery</h2>
+		</div>
+		
+</div>
+	
+	<div id="portfolio" class="container">
+
+<div class="row">
+  <div class="column">
+    <img src="images/img-1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/img-2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/img-3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/img-4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/img-5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/img-6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/img-7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/img-8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="images/img-1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="images/img-2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="images/img-3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="images/img-4.jpg" style="width:100%">
+    </div>
+	   <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="images/img-5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="images/img-6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="images/img-7.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="images/img-8.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    
+	
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</div>
+</div>
+
+<div id="footer">
+	<div class="container1">
+		<div class="fbox1">
+		<span class="icon icon-map-marker"></span>
+			<span>80 Mandai Lake Road 
+			<br />Singapore 729826</span>
+		</div>
+		<div class="fbox1">
+			<span class="icon icon-phone"></span>
+			<span>
+				Telephone: +65 6269 3411
+			</span>
+		</div>
+		<div class="fbox1">
+			<span class="icon icon-envelope"></span>
+			<span><a href="https://www.wrs.com.sg/en/singapore-zoo/contact-us.html"target="_blank">Click Here to Email</a></span>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
